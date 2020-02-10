@@ -2,7 +2,8 @@
 
 import os, sys, re
 
-debug = True
+# debug = True
+debug = False
 
 if len(sys.argv) < 2:
 	if debug:

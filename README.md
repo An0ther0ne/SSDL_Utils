@@ -1,19 +1,29 @@
-# SSDL_Utils
+# SDDL_Utils
 
-**readssdl** - tool for read and parse file ACLs in  SDDL format.
+**readsddl** - tool for read and parse file ACLs in  SDDL format.
 
 ## SYNOPSIS
 
-	python readssdl.py [path]<filename>
+1) Read and parse file ACLs in SDDL format:
+
+    python readssdl.py [path]<filename>
+	
+2) Parse SDDL string:
+
+    python readssdl.py /S:<SDDL>
 
 ### Output:
 	
-	README.md :: D:AI(A;ID;0x1301bf;;;AU)(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1301bf;;;BU)
-    D:AI :: SDDL_AUTO_INHERITED
-    A;ID;0x1301bf;;;AU   :: AUTHENTICATED_USERS           ACCESS_ALLOWED            INHERITED            FILE_READ|DELETE_CHILD|LIST_CHILDREN|READ_PROPERTY|WRITE_PROPERTY|CONTROL_ACCESS|STANDARD_DELETE
-    A;ID;FA;;;SY         :: LOCAL_SYSTEM                  ACCESS_ALLOWED            INHERITED            FILE_ALL        
-    A;ID;FA;;;BA         :: BUILTIN_ADMINISTRATORS        ACCESS_ALLOWED            INHERITED            FILE_ALL        
-    A;ID;0x1301bf;;;BU   :: BUILTIN_USERS                 ACCESS_ALLOWED            INHERITED            FILE_READ|DELETE_CHILD|LIST_CHILDREN|READ_PROPERTY|WRITE_PROPERTY|CONTROL_ACCESS|STANDARD_DELETE
+    README.md :: D:AI(A;ID;0x1301bf;;;AU)(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1301bf;;;BU)
+      D:AI :: SDDL_AUTO_INHERITED
+      A;ID;0x1301bf;;;AU  
+        AUTHENTICATED_USERS           ACCESS_ALLOWED            INHERITED                           FILE_READ|DELETE_CHILD|LIST_CHILDREN|READ_PROPERTY|WRITE_PROPERTY|CONTROL_ACCESS|STANDARD_DELETE
+      A;ID;FA;;;SY        
+        LOCAL_SYSTEM                  ACCESS_ALLOWED            INHERITED                           FILE_ALL        
+      A;ID;FA;;;BA        
+        BUILTIN_ADMINISTRATORS        ACCESS_ALLOWED            INHERITED                           FILE_ALL        
+      A;ID;0x1301bf;;;BU  
+        BUILTIN_USERS                 ACCESS_ALLOWED            INHERITED                           FILE_READ|DELETE_CHILD|LIST_CHILDREN|READ_PROPERTY|WRITE_PROPERTY|CONTROL_ACCESS|STANDARD_DELETE
 	
 ## Explanation	
 
@@ -21,7 +31,7 @@ Parse output of standars CACLS tool.
 
 ## Files:
 	
-* [readssdl.py](readssdl.py) - Tool for read and parse file ACLs in SDDL notation.
+* [readsddl.py](readsddl.py) - Tool for read and parse file ACLs in SDDL notation.
 
 ## Requirements:
 

@@ -5,9 +5,11 @@
 ## SYNOPSIS
 
 1) Read and parse file ACLs in SDDL format:
+
     python readssdl.py [path]<filename>
 	
 2) Parse SDDL string:
+
     python readssdl.py /S:<SDDL>
 
 ### Output:

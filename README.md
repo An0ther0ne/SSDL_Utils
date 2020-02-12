@@ -1,6 +1,7 @@
 # SDDL_Utils
 
 **readsddl** - tool for read and parse file ACLs in  SDDL format.
+**getsddl** - tool for get SDDL for specified file or folder.
 
 ## SYNOPSIS
 

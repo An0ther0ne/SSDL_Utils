@@ -38,8 +38,8 @@
 	
 ## Explanation	
 
-First tool (readsddl) parse output of Windows standart CACLS tool.
-But the second (getsddl) use direct call API procedures from Windows security module.
+First tool '__readsddl__' parse output of Windows standart CACLS tool.
+But the second '__getsddl__' use direct call API procedures from Windows security module.
 You may combine output of second tool as input for the first.
 
 ## Files:

@@ -18,7 +18,8 @@
 
 ### Output:
 
-1)	
+1)
+
     README.md :: D:AI(A;ID;0x1301bf;;;AU)(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1301bf;;;BU)
       D:AI :: SDDL_AUTO_INHERITED
       A;ID;0x1301bf;;;AU  
@@ -31,7 +32,8 @@
         BUILTIN_USERS                 ACCESS_ALLOWED            INHERITED                           FILE_READ|DELETE_CHILD|LIST_CHILDREN|READ_PROPERTY|WRITE_PROPERTY|CONTROL_ACCESS|STANDARD_DELETE
 		
 3) 
-    D:AI(A;ID;0x1301bf;;;AU)(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1301bf;;;BU)
+
+       D:AI(A;ID;0x1301bf;;;AU)(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1301bf;;;BU)
 	
 ## Explanation	
 

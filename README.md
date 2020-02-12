@@ -12,8 +12,13 @@
 
        python readssdl.py /S:<SDDL>
 
+3) Get SDDL representation ACL for file
+
+       python getsddl.py <file | folder>
+
 ### Output:
-	
+
+1)	
     README.md :: D:AI(A;ID;0x1301bf;;;AU)(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1301bf;;;BU)
       D:AI :: SDDL_AUTO_INHERITED
       A;ID;0x1301bf;;;AU  
@@ -24,6 +29,9 @@
         BUILTIN_ADMINISTRATORS        ACCESS_ALLOWED            INHERITED                           FILE_ALL        
       A;ID;0x1301bf;;;BU  
         BUILTIN_USERS                 ACCESS_ALLOWED            INHERITED                           FILE_READ|DELETE_CHILD|LIST_CHILDREN|READ_PROPERTY|WRITE_PROPERTY|CONTROL_ACCESS|STANDARD_DELETE
+		
+3) 
+    D:AI(A;ID;0x1301bf;;;AU)(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1301bf;;;BU)
 	
 ## Explanation	
 
@@ -32,6 +40,7 @@ Parse output of standars CACLS tool.
 ## Files:
 	
 * [readsddl.py](readsddl.py) - Tool for read and parse file ACLs in SDDL notation.
+* [getsddl.py](getsddl.py) - Tool for read ACLs for specified file or folder (including network shares) and shown SDDL string representation of that.
 
 ## Requirements:
 
